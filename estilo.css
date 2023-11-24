@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7ede2; /* Fondo */
+    color: #39505d; /* Texto principal */
+}
+
+.container {
+    background-color: #f8ead3; /* Fondo del contenedor */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto; 
+}
+
+h1 {
+    color: #4d7298; /* Título */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #7eb2cc; /* Botón principal */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #4caf50; /* Botón de éxito */
+}
+
+.btn:hover, .btn-success:hover {
+    opacity: 0.9;
+}
+
+.background-change-win {
+    animation: changeBackgroundWin 5s infinite;
+}
+
+.background-change-lose {
+    animation: changeBackgroundLose 5s infinite;
+}
+
+@keyframes changeBackgroundWin {
+    0%, 100% { background-color: #f8ead3; }
+    25% { background-color: #d3f8e2; }
+    50% { background-color: #aad364; }
+    75% { background-color: #5ea35e; }
+}
+
+@keyframes changeBackgroundLose {
+    0%, 100% { background-color: #f8ead3; }
+    25%, 50% { background-color: #f09292; }
+    75% { background-color: #f05959; }
+}
+
+
